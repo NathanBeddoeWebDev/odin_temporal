@@ -12,6 +12,7 @@ if [[ "$actual_version" != "odin version $expected_version" ]]; then
 fi
 
 common=(-vet -vet-style -warnings-as-errors)
+scripts/check_public_api.py
 odin check . -no-entry-point "${common[@]}"
 odin test tests -o:minimal "${common[@]}" \
   -define:ODIN_TEST_THREADS=1 \
