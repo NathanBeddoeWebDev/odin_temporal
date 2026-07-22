@@ -20,6 +20,6 @@ scripts/check.sh
 
 ## Integration
 
-This repository is consumed by `odin_toml` as the `vendor/temporal` git
+This repository is consumed by `odin_toml` as the `external/temporal` git
 submodule. Odin clients can import the package by a relative path or map it
 into a collection.
